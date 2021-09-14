@@ -45,7 +45,7 @@ pipeline {
         stage('Run Docker container on remote hosts') {
              
             steps {
-                sh "docker -H ssh://jenkins@172.31.95.188 run -d -p 8004:8080 krushang007/samplewebapp"
+                sh "docker -H ssh://jenkins@172.31.95.188 run -d -p 8005:8080 krushang007/samplewebapp"
  
             }
         }
